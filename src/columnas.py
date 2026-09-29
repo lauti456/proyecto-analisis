@@ -30,14 +30,22 @@ analista={
         "forma" : "A",
         "completitud_minima":80
 }
+######################################
+auditor={
+    "columnas_interes": list(tipos_datos()), #-----< el list es para no tener que tipear uno por una las columnas y poder llamarlo con una keys
+    "criterio_orden":"nombre",
+    "forma":"D",
+    "completitud_minima":None
+}
+######################################
+
 
 roles={
     "docente":docente,
     "investigador":investigador,
-    "analista":analista
+    "analista":analista,
+    "auditor":
 }
-############################
-
 
 def informar_columnas(rol=None):
     """
